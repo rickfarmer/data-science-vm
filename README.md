@@ -1,4 +1,22 @@
-data-science-vm
-===============
+# Data Science VM
 
-The Data Scientist's toolbox.  Get a quick start.  No need to install and configure your development environment, it's all done automatically for you here.  The Data Scientist's toolbox includes R, RStudio, RTools, devtools, Git, TextMate, Python, and sensible default R libraries pre-installed (e.g. base, lattice, ggplot2, shiny, etc).  The Data Scientist's Toolbox VM (Virtual Machine) is automatically built for you on a single Ubuntu VM using the Vagrant DevOps tool with Chef and shell-scripts.
+## Users
+root/vagrant
+joe/joe
+chuck/chuck
+cloudera/cloudera
+
+
+## Hive Embedded DB
+PostgresSQL
+Host, e63:7432
+DB name, hive
+Username, hive
+Password, 8xlpmpA6NE
+
+# Hue
+http://e63:8888/
+hdfs/hdfs
+
+# Test the Cluster
+sudo -u hdfs hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar pi 10 100

@@ -1,0 +1,26 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+
+export PATH
+
+# User specific environment and startup programs
+HADOOP_HOME=/usr/local/hadoop
+export HADOOP_HOME
+
+JAVA_HOME=/usr/lib/jvm/java
+#JAVA_HOME==/usr/lib/jvm/jdk1.7.0_75
+export JAVA_HOME 
+
+HADOOP_MAPRED_HOME=/usr/lib/hadoop-mapreduce
+export HADOOP_MAPPRED_HOME 
+
+PATH=$PATH:$HOME/bin:$HADOOP_HOME/bin:$JAVA_HOME/bin 
+export PATH
