@@ -102,5 +102,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.provision "shell", inline: "echo Installation complete"
   
   end  
+
+  if ENV['MAHOUT'] == 'true'
+
+    config.vm.provision "shell", inline: "echo Installing Mahout..."
+    config.vm.provision "shell", path: "provision-mahout.sh"
+    config.vm.provision "shell", inline: "echo Installation complete"
+
+  end
+
   
 end

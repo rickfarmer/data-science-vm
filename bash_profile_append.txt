@@ -22,5 +22,11 @@ export JAVA_HOME
 HADOOP_MAPRED_HOME=/usr/lib/hadoop-mapreduce
 export HADOOP_MAPPRED_HOME 
 
-PATH=$PATH:$HOME/bin:$HADOOP_HOME/bin:$JAVA_HOME/bin 
+MAHOUT_HOME=/usr/lib/mahout
+export MAHOUT_HOME
+
+#M2_HOME=/usr/lib/maven
+#export M2_HOME
+
+PATH=$PATH:$HOME/bin:$HADOOP_HOME/bin:$JAVA_HOME/bin:$MAHOUT_HOME 
 export PATH

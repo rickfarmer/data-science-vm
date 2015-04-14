@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 
-
 echo "Installing Cloudera..."
 # Config is at $ sudo vi /usr/lib/hadoop/bin/hadoop
 # and sudo vi /usr/lib/hadoop/etc/hadoop

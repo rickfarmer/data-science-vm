@@ -1,5 +1,9 @@
 # Data Science VM
 
+##Need to install the following Gems
+vagrant plugin install vagrant-omnibus
+vagrant plugin install vagrant-env
+
 ## Users
 root/vagrant
 joe/joe
