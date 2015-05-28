@@ -12,7 +12,7 @@ PATH=$PATH:$HOME/bin
 export PATH
 
 # User specific environment and startup programs
-HADOOP_HOME=/usr/local/hadoop
+HADOOP_HOME=/usr/lib/hadoop
 export HADOOP_HOME
 
 JAVA_HOME=/usr/lib/jvm/java
@@ -25,8 +25,11 @@ export HADOOP_MAPPRED_HOME
 MAHOUT_HOME=/usr/lib/mahout
 export MAHOUT_HOME
 
-#M2_HOME=/usr/lib/maven
-#export M2_HOME
+M2_HOME=/usr/share/apache-maven
+export M2_HOME
 
-PATH=$PATH:$HOME/bin:$HADOOP_HOME/bin:$JAVA_HOME/bin:$MAHOUT_HOME 
+SPARK_HOME=/usr/lib/spark
+export SPARK_HOME
+
+PATH=$PATH:$HOME/bin:$HADOOP_HOME/bin:$JAVA_HOME/bin:$M2_HOME/bin:$MAHOUT_HOME:$SPARK_HOME/bin
 export PATH
